@@ -1,0 +1,239 @@
+.body_class {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.container {
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding: 8px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 12px 0 12px;
+}
+
+.nav_demo {
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.nav_demo .application_url {
+    color: #006eeb;
+    font-size: 1rem;
+    padding-top: 0.5rem;
+}
+.vernabiltiy_tab{
+             width:100%;
+            display: flex;
+            padding: 14px;
+            gap:18px;
+            margin-top: 10px;
+}
+
+.nav_demo .application_name {
+    color: #002e63;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.nav_button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.setting_btn i {
+    font-size: 16px;
+}
+
+.test_btn {
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    opacity: .9;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    background-color: #202020;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+}
+.test_btn:hover{
+   background-color: #006eeb;
+}
+
+.grid_box {
+    margin: 15px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid_1 {
+    background-color: #f24747;
+    border: 1px solid #F24747;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.8rem 0rem 0.2rem;
+}
+
+.grid_2 {
+    background-color: #4cae4c;
+    border: 1px solid #4CAE4C;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.8rem 0rem 0.2rem;
+}
+
+#btn {
+    display: none;
+}
+.showTab_disp{
+    cursor: pointer;
+}
+
+.vernability_title {
+    padding: 8px;
+    display:block;
+                            border-bottom: 1px solid #DFE4EF
+}
+.all_vulnerabiltiy{
+   
+    gap: 15px;
+    width: 200px;
+    
+    font-size: 1.1rem;
+    margin: 10px 0 10px 12px;
+    padding:4px;
+    border: 1px solid #006eeb;
+   border-radius: 4px;
+   cursor: pointer;
+}
+.all_vulnerabiltiy:hover{
+    background-color: #5a9ce6;
+    color:#fff;
+}
+
+.vernability_title:hover {
+    background-color: #91bbec;
+}
+
+.vernability_title b {
+    color: #000;
+    font-weight: 600;
+}
+.vernabiltiy_btn{
+    overflow-y: hidden;
+                scroll-behavior: smooth;
+                border: 1px solid #DFE4EF;
+                box-sizing: border-box;
+                width: 45%;
+                border-radius: 1%;
+                
+}
+.vernabiltiy_btn span p {
+    color: #676767;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.desc_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 12px; */
+}
+
+.vul_topic {
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.8rem 0rem;
+    margin-right: 32px;
+}
+
+.desc_cPart {
+    display: flex;
+    align-items: center;
+    gap:20px;
+    /* justify-content: space-between; */
+}
+.cPart_desc table{
+    margin-right: 20px;
+}
+.desc_head{
+    font-weight: bold;
+}
+
+.critical_box {
+    background-color: #f24747;
+    width: 64px;
+    height: 64px;
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vernability_title{
+    padding: 12px;
+}
+
+.cPart_desc {
+    display: flex;
+    flex-direction: column;
+}
+.vulnerability-desc-block{
+    padding: 2.2rem 0rem 0rem;   
+}
+.vuln-desc-heading{
+    color: #3d3d3d;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 1.5rem;   
+}
+.vuln-desc-text{
+    color: #3d3d3d;
+    width: 85%;
+    word-break: break-word;
+}
+a{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #006eeb;
+    text-decoration: none;  
+}
+.vul_head{
+    color: #000;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.8rem 0rem;
+    margin-right: 32px; 
+}
+.critical_box_yellow{
+    background-color: #ee9336;
+    width: 64px;
+    height: 64px;
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vernability_title.active{
+    background-color: #97c1f0;
+}

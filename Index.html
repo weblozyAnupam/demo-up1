@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Api</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+</head>
+
+<body>
+    <div class="body_class">
+
+        <div class="container">
+            <nav>
+                <div class="nav_demo">
+                    <img src="./assests/logo.svg" alt="" width="50px" height="50px">
+                    <div class="nav_head">
+                        <div class="application_name">Demo API</div>
+                        <div class="application_url">https://api.beaglehack.com/</div>
+                    </div>
+                </div>
+                <div class="nav_button">
+                    <button class="test_btn ">Test Now</button>
+                </div>
+            </nav>
+
+            <div class="grid_box">
+                <div class="grid_1">
+                    <div class="grid_text_content">2</div>
+                    <div class="grid_vuln_level">Critical</div>
+                </div>
+                <div class="grid_2">
+                    <div class="grid_text_content">0</div>
+                    <div class="grid_vuln_level">Low</div>
+                </div>
+
+            </div>
+            <!-- Tab section -->
+
+            <span id="tgle" class="all_vulnerabiltiy" onclick="toggle()">
+                All Vulnerabilities    <i class="fa-solid fa-caret-down"></i>
+            </span>
+            <span  id="counter" class="all_vulnerabiltiy" style="border-radius: 20%;">0</span>
+            <div class="vernabiltiy_tab" id="w_btn">
+                <div id="btn" class="vernabiltiy_btn
+                ">
+                    <!-- Toggle buttons for the tabs -->
+                    <span onclick="showTab(0)" class="showTab_disp">
+                        <div class="vernability_title
+                            ">
+                            <b>Sql injection</b>
+                            <p style="white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                height: 1.2em; /* Set the fixed height to show only one line of text */
+                                margin: 0; /* Remove margin to avoid spacing issues */
+                                ">
+                                SQL Injection is a kind of method used by hackers to access, modify, and delete the data
+                                from the database. By leveraging SQL Injection, hackers will also be able to bypass
+                                authentication and access unauthorized data from databases. Potentially allowing an
+                                attacker to escalate to more damaging attacks inside the network where the application
+                                is hosted
+                            </p>
+                        </div>
+                    </span>
+                    <span onclick="showTab(1)" class="showTab_disp">
+                        <div class="vernability_title"
+                         style="border-bottom: 1px solid #DFE4EF;">
+                            <b> User Information Disclosure</b>
+                            <p style="white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                height: 1.2em; 
+                                margin: 0; 
+                                ">
+                                SQL Injection is a kind of method used by hackers to access, modify, and delete the data
+                                from the database. By leveraging SQL Injection, hackers will also be able to bypass
+                                authentication and access unauthorized data from databases. Potentially allowing an
+                                attacker to escalate to more damaging attacks inside the network where the application
+                                is hosted
+                            </p>
+                        </div>
+                    </span>
+                    <span onclick="showTab(2)" class="showTab_disp" style="cursor: pointer;">
+                        <div class="vernability_title" style="border-bottom: 1px solid #DFE4EF;">
+                            <b> Insecure Direct Object References (IDOR)</b>
+                            <p style="white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                                height: 1.2em; /* Set the fixed height to show only one line of text */
+                                margin: 0; /* Remove margin to avoid spacing issues */
+                                ">
+                                SQL Injection is a kind of method used by hackers to access, modify, and delete the data
+                                from the database. By leveraging SQL Injection, hackers will also be able to bypass
+                                authentication and access unauthorized data from databases. Potentially allowing an
+                                attacker to escalate to more damaging attacks inside the network where the application
+                                is hosted
+                            </p>
+                        </div>
+                    </span>
+
+                </div>
+                <div style="width: 100%; 
+                
+                margin-left: 10px;
+                ">
+                    <!-- Content for each tab -->
+                    <div class="tab" id="tab1">
+
+                        <div class="tab_description" style="cursor: pointer;">
+                            <div class="desc_header">
+                                <span class="vul_topic">Sql injection</span>
+                               
+                            </div>
+                            <hr style=  " margin-right: 10px;">
+                            <div class="desc_cPart">
+                                <div class="critical_box">
+                                    C
+                                </div>
+                                <div class="cPart_desc">
+                                    <table>
+                                        <tr>
+                                            <td class="desc_head">Vernability Name </td>
+                                            <td>high</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="desc_head">CVSS </td>
+                                            <td>high</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="desc_head">Vernability Rating </td>
+                                            <td>high</td>
+                                        </tr>   
+                                    </table>
+
+                                </div>
+                            </div>
+                            <div class="vulnerability-desc-block">
+                                <div class="vuln-desc-heading">
+                                    Description
+                                </div>
+                                <div class="vuln-desc-text">
+                                    SQL Injection is a kind of method used by hackers to access,
+                                    modify and delete the data from the database. By leveraging
+                                    SQL Injection hackers will also be able to bypass authentication
+                                    and access unauthorized data from databases. Potentially allowing
+                                    an attacker to escalate to
+                                    more damaging attacks inside the network where the application is hosted
+                                </div>
+                            </div>
+
+                            <div class="vulnerability-desc-block">
+                                <div class="vuln-desc-heading">
+                                    Recommendation
+                                </div>
+                                <div class="vuln-desc-text">
+                                    <ol>
+
+                                        <li>
+                                            <p>
+                                                <strong>Validate user input</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Validate user input</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Validate user input</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab" id="tab2">
+                        <div class="tab_description">
+                            <div class="desc_header">
+                                <span class="
+                                vul_head">User Information Disclosure</span>
+                               
+                            </div>
+                            <hr style=  " margin-right: 10px;">
+                            <div class="desc_cPart">
+                                <div class="critical_box">
+                                    C
+                                </div>
+                                <div class="cPart_desc">
+                                    <table>
+                                        <tr>
+                                            <td class="desc_head">Vernability Name </td>
+                                            <td>high</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="desc_head">CVSS </td>
+                                            <td>high</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="desc_head">Vernability Rating </td>
+                                            <td>high</td>
+                                        </tr>   
+                                    </table>
+
+                                </div>
+                            </div>
+                            <div class="vulnerability-desc-block">
+                                <div class="vuln-desc-heading">
+                                    Description
+                                </div>
+                                <div class="vuln-desc-text">
+                                    This server uses Simple Internet Publishing System that stores
+                                    sensitive information under the web root with insufficient
+                                    access controls. This will allows remote attackers to
+                                    obtain the password and other user information using a
+                                    direct request to a user-specific configuration directory.
+                                </div>
+                            </div>
+
+                            <div class="vulnerability-desc-block">
+                                <div class="vuln-desc-heading" >
+                                    Recommendation
+                                </div>
+                                <div class="vuln-desc-text">
+                                    <ol>
+
+                                        <li>
+                                            <p>
+                                                <strong>Validate user input</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Validate user input</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Validate user input</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab" id="tab3">
+                        <div class="tab_description">
+                            <div class="desc_header">
+                                <span class="vul_head">Insecure Direct Object References (IDOR)</span>
+                               
+                            </div>
+                            <hr style=  " margin-right: 10px;">
+                            <div class="desc_cPart">
+                                <div class="critical_box_yellow">
+                                    H
+                                </div>
+                                <div class="cPart_desc">
+                                    <table>
+                                        <tr>
+                                            <td class="desc_head">Vernability Name </td>
+                                            <td>high</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="desc_head">CVSS </td>
+                                            <td>high</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="desc_head">Vernability Rating </td>
+                                            <td>high</td>
+                                        </tr>   
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="vulnerability-desc-block" >
+                                <div class="vuln-desc-heading">
+                                    Description
+                                </div>
+                                <div class="vuln-desc-text">
+                                    IDOR is a broken access control vulnerability that allows unauthorised access to
+                                    application features using invalidated user input. IDOR may lead to the leakage of
+                                    private information or the alteration of data, among other things.
+
+                                </div>
+                            </div>
+
+                            <div class="vulnerability-desc-block">
+                                <div class="vuln-desc-heading">
+                                    Recommendation
+                                </div>
+                                <div class="vuln-desc-text" >
+                                    <ol>
+
+                                        <li>
+                                            <p>
+                                                <strong>Validate user input</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Validate user input</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <p>
+                                                <strong>Validate user input</strong>
+                                            </p>
+                                            <ul>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                                <li>
+                                                    Validate user inputs on the server side for all database queries.
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ol>
+                                    <a href="#">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
