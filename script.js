@@ -2,18 +2,19 @@ function toggle() {
   var btn = document.getElementById("btn");
   btn.style.display = (btn.style.display === "none" || btn.style.display === "") ? "block" : "none";
 }
-toggle(0)
+toggle(1)
 
 function showTab(tabIndex) {
   var tabs = document.querySelectorAll(".tab");
   for (var i = 0; i < tabs.length; i++) {
-      tabs[i].style.display = "none";
+    tabs[i].style.display = "none";
   }
-  tabs[tabIndex].style.display = "block";
+  tabs[tabIndex - 1].style.display = "block";
+   // Subtract 1 to match the new starting index
 }
 
-// Call showTab(0) to open the first tab by default
-showTab(0);
+// Call showTab(1) to open the first tab by default
+showTab(1);
 
 
 // counter
